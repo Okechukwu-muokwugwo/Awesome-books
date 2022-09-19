@@ -1,19 +1,24 @@
-const bookTitle = document.getElementById('book-title');
-const bookAuthor = document.getElementById('book-author');
-
 // Create Object Array for the books
+const userBookList = [];
+const books = [];
+const addBook = document.querySelector('.add-book');
+addBook.addEventListener('click', () => {
+  const bookData = {
+    title: document.getElementById('book-title').value,
+    author: document.getElementById('book-author').value,
+  };
+  userBookList.push(bookData);
+  localStorage.setItem('userBookData', JSON.stringify(userBookList));
 
-const books = [
-  {
-   bookTitle: bookTitle.value,
-   bookAuthor: bookAuthor.value,
-  },
-];
+  const userBookDataLocalStorage = JSON.parse(localStorage.getItem('userBookData'));
+  books.push(userBookDataLocalStorage[userBookDataLocalStorage.length - 1]);
+  // Display books
+  const booksContainer = document.querySelector('.books-container');
 
-const booksContainer = document.querySelector('.books-container');
+  const displayBooks = books.map((bookList) => `<div><p class="book-name">${bookList.title}</p>
+<p class="author-name">${bookList.author}</p>
+<button type="button" class="remove-book">Remove</button></div>
+<hr>`).join('');
 
-const displayBooks = books.map((bookList) => `<p class="book-name">${bookList.bookTitle}</p>
-<p class="author-name">${bookList.bookAuthor}</p>
-<button type="button" class="remove-book">Remove</button>`)
-
-booksContainer.innerHTML = displayBooks;
+  booksContainer.innerHTML = displayBooks;
+});
