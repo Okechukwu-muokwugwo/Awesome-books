@@ -15,18 +15,19 @@ addBook.addEventListener('click', () => {
   // Display books
   const booksContainer = document.querySelector('.books-container');
 
-  const displayBooks = books.map((bookList) => `<div id="remove"><p class="book-name">${bookList.title}</p>
+  const displayBooks = books.map((bookList, index) => `<div id="remove"><p class="book-name">${bookList.title}</p>
 <p class="author-name">${bookList.author}</p>
-<button type="button" class="remove-book">Remove</button></div>
+<button type="button" class="remove-book" id=${index}>Remove</button></div>
 <hr>`).join('');
 
   booksContainer.innerHTML = displayBooks;
 
   const removeButton = document.querySelector('.remove-book');
   removeButton.addEventListener('click', () => {
-    const removeElement = document.getElementById('remove');
-    removeElement.remove();
+  // const removeElement = document.getElementById('remove');
+    const removButton = document.getElementById('remove');
     localStorage.clear();
+    removButton.remove();
   });
 });
 
