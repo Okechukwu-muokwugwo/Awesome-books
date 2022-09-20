@@ -8,14 +8,15 @@
     <title>Awesome Books</title>
 </head>
 <body>
-    <h1 class="title">Awesome Books</h1>
-    <div class="books-container" id="books">
-        
+    <h1 class="title">All Awesome Books</h1>
+    <div class="books-container" id="books">  
     </div>
+    <div class="line"></div>
     <form id="add-book-form" method="post" action="" class="add-books">
-        <input id="book-title" class="title-input" type="text" placeholder="Title"> <br> <br>
-        <input id="book-author" class="author-input" type="text" placeholder="Author"> <br> <br>
-        <button type="submit" class="add-book">Add</button>
+        <h2>Add a new book</h2>
+        <input id="book-title" class="title-input" type="text" placeholder="Title" required> <br> <br>
+        <input id="book-author" class="author-input" type="text" placeholder="Author" required> <br> <br>
+        <button type="submit" onclick="changeColor()" class="add-book">Add</button>
     </form>
 
    

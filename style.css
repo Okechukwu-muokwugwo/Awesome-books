@@ -1,3 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .books-container {
+  width: 95%;
+  border: 3px solid black;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.line {
+  display: block;
+  width: 30%;
+  margin-bottom: 0%;
+  border-bottom: 3px solid black;
+  margin-top: 5%;
+  padding-bottom: 0;
+}
+
+#add-book-form {
+  margin-top: 5%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-book-form > h2 {
+  margin-bottom: 1rem;
+}
+
+#add-book-form > input {
   width: 100%;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+#add-book-form > button {
+  align-self: flex-end;
+  padding: 0.8rem;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 3px black;
+}
+
+.books-container :nth-child(even) {
+  background-color: gray;
+}
+
+.removed {
+  display: flex;
+  height: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.book-name {
+  width: 500px;
+  margin-left: 1rem;
+}
+
+#remove-book {
+  margin-right: 5%;
+  background-color: white;
+  position: absolute;
+  top: 8px;
+  right: 5px;
 }
