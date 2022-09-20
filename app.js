@@ -71,9 +71,10 @@ class store {
                 books.splice(index , 1);
             }
         });
-        localStorage.setItem('books', JSON.stringify('books'));
+        localStorage.setItem('books', JSON.stringify(books));
     }
 }
+
 // Event: display books
 document.addEventListener("DOMContentLoaded", UI.displayBooks);
 
@@ -100,6 +101,7 @@ document.querySelector("#add-book-form").addEventListener('submit',(e) =>
 
  // add book to store
  store.addBooks(book);
+
  //clear fields
  UI.clearField();
 }
