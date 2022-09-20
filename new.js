@@ -36,6 +36,7 @@ document.getElementById('add-book-form').addEventListener('submit', (e) => {
   document.getElementById('book-author').value = '';
 });
 
+// eslint-disable-next-line no-unused-vars
 function delBook(id) {
   const filteredBooks = bookData.filter((item) => item.id !== id);
   bookData = filteredBooks;
