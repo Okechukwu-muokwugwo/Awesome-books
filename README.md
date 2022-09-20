@@ -1,45 +1,28 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Awesome Books
-
->
-
-## Underneath are attached snapshoots of the web interfaces
+In this project, we build a basic website that allows users to add/remove books from a list.We achieve that by using JavaScript objects and arrays. We also modify dynamically the DOM and add basic events.
 
  ## Learning objectives
-
- - Use semantic HTML tags.
- - Apply best practices in HTML code.
- - Use CSS selectors correctly.
- - Use CSS box model.
- - Use Flexbox to place elements in the page.
- - Demonstrate ability to create UIs adaptable to different screen sizes using media queries.
- - Use GitHub Pages to deploy web pages.
- - Apply JavaScript best practices and language style guides in code.
- - Use JavaScript to manipulate DOM elements.
- - Use JavaScript events.
- - Use objects to store and access data.
- - Communicate technical concepts to other technical people.
+-Create a collection that keeps a list of books.
+-Create a function to add a new book to the collection, with title and author.
+-Create a function to remove a book from the collection.
+-Display all books saved in the collection in the top part of the page.
 
 ## Built With
 
-- CSS, HTML, JavaScript
+- HTML, JavaScript
 
-## Live Demo
-
-> You can view the project [Live Demo](https://okechukwu-muokwugwo.github.io/Capstone-html-css-Js/)
-
-> [Presentation](https://screenrec.com/share/q7ubjVkaAS)
 
 ## Getting Started
+Open index.html
 
 ### To launch the project locally:
 
 #### Step 1:
 - Clone this repository in your local machine terminal:
 
-git clone <code>https://github.co/Okechukwu-muokwugwo/capstone-hmtl-css-js.git</code>
-
+git clone <code>https://github.com/Okechukwu-muokwugwo/Awesome-books.git</code>
 
 #### Step 2:
 
@@ -53,6 +36,15 @@ git clone <code>https://github.co/Okechukwu-muokwugwo/capstone-hmtl-css-js.git</
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/okeimuokwugwo/)
 - Twitter: [Twitter](https://twitter.com/excel4eva)
 
+👤 Jeremiah Melfah
+
+- GitHub: [GitHub](https://github.com/Jaymelfah)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jeremiah-ekow-melfah-a4402a161/)
+
+👤 Manar Omari
+
+- GitHub: [GitHub](https://github.com/ManarOmari)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/manar-alomari-b509ab107/)
 
 ## 🤝 Contributing
 
@@ -64,14 +56,6 @@ Contributions, issues and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-### Design Cindy Shin
-
-![Cindy Shin's Logo](https://mir-s3-cdn-cf.behance.net/user/115/0a3f923115241.576e64d0ea9fa.png)
-
-- behance: [Cindy Shin](https://www.behance.net/adagio07)
-- LinkedIn: [Cindy Shin](https://www.linkedin.com/in/adagio07/)
-- dribbble: [Cindy Shin](https://dribbble.com/adagio07/collections)
 
 ## 📝 License
 
