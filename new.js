@@ -53,4 +53,5 @@ document.getElementById('add-book-form').addEventListener('submit', (e) => {
   document.getElementById('book-author').value = '';
 });
 
+// Method to del book
 Awesomebooks.delBook();
