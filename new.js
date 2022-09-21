@@ -2,7 +2,7 @@ let bookData = JSON.parse(localStorage.getItem('storageBooksData'))
   ? JSON.parse(localStorage.getItem('storageBooksData'))
   : [];
 
-// Create Awesomebooks class 
+// Create Awesomebooks class
 class Awesomebooks {
   constructor(id, title, author) {
     this.id = id;
@@ -39,7 +39,7 @@ class Awesomebooks {
 document.addEventListener('DOMContentLoaded', () => {
   Awesomebooks.createBooks();
 });
-// function to send to local storage 
+// function to send to local storage
 function sendToLocal(a, b) {
   localStorage.setItem(a, JSON.stringify(b));
   Awesomebooks.createBooks();
