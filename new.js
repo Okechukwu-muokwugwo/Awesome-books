@@ -65,5 +65,28 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.date').innerHTML = dateTime;
 });
 
-// Remove border when books container is empty
+const link = document.getElementById('link-a');
+const addNew = document.getElementById('add-new-a');
+const contact = document.getElementById('contact-a');
 
+const sectionBook = document.querySelector('.book-list-section');
+const addNewBook = document.getElementById('add-book-form');
+const sectionContact = document.querySelector('.contact-section');
+
+link.addEventListener('click', () => {
+  addNewBook.style.display = 'none';
+  sectionContact.style.display = 'none';
+  sectionBook.style.display = 'block';
+});
+
+addNew.addEventListener('click', () => {
+  sectionBook.style.display = 'none';
+  sectionContact.style.display = 'none';
+  addNewBook.style.display = 'flex';
+});
+
+contact.addEventListener('click', () => {
+  sectionBook.style.display = 'none';
+  addNewBook.style.display = 'none';
+  sectionContact.style.display = 'block';
+});
