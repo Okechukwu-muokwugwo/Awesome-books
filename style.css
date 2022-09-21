@@ -82,7 +82,7 @@ body {
 #add-book-form {
   margin-top: 5%;
   width: 50%;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -142,4 +142,26 @@ body {
   align-items: center;
   position: absolute;
   bottom: 5px;
+}
+
+.book-list-section {
+  display: block;
+}
+
+.title {
+  text-align: center;
+}
+
+.contact-section {
+  display: none;
+  margin-bottom: 30%;
+}
+
+.contact-info {
+  margin-bottom: 10%;
+  font-size: 20px;
+}
+
+.contact-title {
+  margin-bottom: 10%;
 }
