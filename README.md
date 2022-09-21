@@ -1,17 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Awesome Books
-In this project, we build a basic website that allows users to add/remove books from a list.We achieve that by using JavaScript objects and arrays. We also modify dynamically the DOM and add basic events.
+In this project, We  refactor the Awesome books application to use JavaScript classes.
 
  ## Learning objectives
--Create a collection that keeps a list of books.
--Create a function to add a new book to the collection, with title and author.
--Create a function to remove a book from the collection.
--Display all books saved in the collection in the top part of the page.
+- Use JavaScript classes.
+- Understand how to use medium-fidelity wireframes to create a UI.
 
 ## Built With
 
-- HTML, JavaScript
+- HTML, CSS, JavaScript
 
 
 ## Getting Started
