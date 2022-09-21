@@ -56,6 +56,7 @@ document.getElementById('add-book-form').addEventListener('submit', (e) => {
 // Method to del book
 Awesomebooks.delBook();
 
+// Add date
 document.addEventListener('DOMContentLoaded', () => {
   const today = new Date();
   const date = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
@@ -63,3 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const dateTime = `${date} ${time}`;
   document.querySelector('.date').innerHTML = dateTime;
 });
+
+// Remove border when books container is empty
+

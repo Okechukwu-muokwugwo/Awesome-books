@@ -125,11 +125,11 @@ body {
 }
 
 #remove-book {
-  margin-right: 5%;
+  margin-right: 2%;
   background-color: white;
   position: absolute;
-  top: 8px;
-  right: 5px;
+  top: 9px;
+  right: 2px;
 }
 
 .footer-section {
@@ -145,6 +145,7 @@ body {
 }
 
 .book-list-section {
+  width: 100%;
   display: block;
 }
 
@@ -154,7 +155,7 @@ body {
 
 .contact-section {
   display: none;
-  margin-bottom: 30%;
+  margin-bottom: 10%;
 }
 
 .contact-info {
