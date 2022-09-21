@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/comic-futura');
+
 /* Css style for awesome books */
 * {
   box-sizing: border-box;
@@ -61,6 +63,7 @@ body {
   align-items: center;
   position: relative;
   height: 100vh;
+  font-family: 'Comic Futura', sans-serif;
 }
 
 .books-container {
@@ -101,9 +104,14 @@ body {
 #add-book-form > button {
   align-self: flex-end;
   padding: 0.8rem;
+  cursor: pointer;
   background-color: white;
   border: 1px solid black;
   box-shadow: 0 0 3px black;
+}
+
+#add-book-form > button:hover {
+  box-shadow: 0 3px 5px royalblue;
 }
 
 .books-container :nth-child(even) {
