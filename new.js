@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const dateTime = `${date} ${time}`;
   document.querySelector('.date').innerHTML = dateTime;
 });
-
+// Rendering various links
 const link = document.getElementById('link-a');
 const addNew = document.getElementById('add-new-a');
 const contact = document.getElementById('contact-a');
