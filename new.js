@@ -1,7 +1,7 @@
 let bookData = JSON.parse(localStorage.getItem('storageBooksData'))
   ? JSON.parse(localStorage.getItem('storageBooksData'))
   : [];
-
+// Create Awesomebooks class 
 class Awesomebooks {
   constructor(id, title, author) {
     this.id = id;
@@ -9,6 +9,7 @@ class Awesomebooks {
     this.author = author;
   }
 
+  // Method to display books
   static createBooks() {
     const booksContainer = document.querySelector('.books-container');
     const displayBooks = bookData.map((bookList) => `<div class="removed" id="remove"><p class="book-name">"${bookList.title}" By ${bookList.author}</p>
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   Awesomebooks.createBooks();
 });
 
+// function to send to local storage 
 function sendToLocal(a, b) {
   localStorage.setItem(a, JSON.stringify(b));
   Awesomebooks.createBooks();
